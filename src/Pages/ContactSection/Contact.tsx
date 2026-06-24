@@ -2,7 +2,9 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 
-interface ContactProps {}
+interface ContactProps {
+   onNavigate?: (p: string) => void;
+}
 
 const office = {
   emoji: '🇮🇳',
