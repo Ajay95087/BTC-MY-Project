@@ -1,0 +1,148 @@
+
+.btc-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 0 2rem;
+  height: 100%;
+}
+
+/* ── NAV LINKS ── */
+.btc-links {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btc-links li a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.83rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  padding: 0.45rem 0.7rem;
+  border-radius: 5px;
+  display: block;
+  white-space: nowrap;
+  transition: color 0.18s, background 0.18s;
+}
+
+.btc-links li a:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ── DROPDOWN ── */
+.btc-dropdown {
+  position: relative;
+}
+
+.btc-drop-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.83rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.72);
+  background: none;
+  border: none;
+  padding: 0.45rem 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  transition: color 0.18s, background 0.18s;
+}
+
+.btc-drop-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.btc-drop-btn svg {
+  transition: transform 0.2s;
+}
+
+.btc-dropdown.open .btc-drop-btn svg {
+  transform: rotate(180deg);
+}
+
+.btc-drop-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a2035;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 6px;
+  min-width: 200px;
+  z-index: 100;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.btc-dropdown.open .btc-drop-menu {
+  display: block;
+}
+
+.btc-drop-menu a {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  padding: 0.5rem 0.85rem;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.btc-drop-menu a:hover {
+  color: #f0c060;
+  background: rgba(240, 192, 96, 0.08);
+}
+
+.btc-drop-divider {
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 4px 0;
+}
+
+/* ── SUPPORT BUTTON ── */
+.btc-support {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #0d1120;
+  background: #f0c060;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.18s, transform 0.1s;
+}
+
+.btc-support:hover {
+  background: #e8b540;
+  transform: translateY(-1px);
+}
+
+.btc-support:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 868px) {
+  .btc-links,
+  .btc-support {
+    display: none;
+  }
+}

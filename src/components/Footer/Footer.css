@@ -1,0 +1,188 @@
+
+.footer {
+  background-color: #0f1623;
+  color: #c8d0e0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  padding: 60px 40px 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ── Top Grid ── */
+.footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+/* ── Brand Column ── */
+.footer__brand-logo {
+  
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.footer__brand-btc {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f0c060;
+  letter-spacing: 0.10em;
+}
+
+.footer__brand-name {
+  font-family: 'Caveat', cursive;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.10em;
+}
+
+.footer__tagline {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #8a97ae;
+  margin-bottom: 28px;
+}
+
+/* ── Social Icons ── */
+.footer__socials {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.footer__social-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid #2a3447;
+  background: transparent;
+  color: #8a97ae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.footer__social-btn:hover {
+  border-color: #e8a930;
+  color: #e8a930;
+}
+
+/* ── Nav Columns ── */
+.footer__col-heading {
+  font-size: 0.9rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #5a6a82;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__nav-list li {
+  margin-bottom: 14px;
+}
+
+.footer__nav-link {
+  color: #8a97ae;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.footer__nav-link:hover {
+  color: #e8a930;
+}
+
+.div_Contents {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  line-height: 1.8;
+}
+
+.footer__Content,
+.footer__E-mail {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8a97ae;
+}
+
+.footer-email {
+  font-size: 15px;
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-email:hover {
+  color: #00bfff;
+}
+
+
+/* ── Divider ── */
+.footer__divider {
+  border: none;
+  border-top: 1px solid #1e2a3a;
+  margin: 0 0 24px;
+}
+
+/* ── Bottom Row ── */
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__copyright {
+  font-size: 0.85rem;
+  color: #5a6a82;
+  margin: 0;
+}
+
+.footer__made-with {
+  font-size: 0.85rem;
+  color: #5a6a82;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-style: italic;
+}
+
+.footer__legal-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer__legal-link {
+  color: #5a6a82;
+  
+}
+
+.footer__legal-link:hover {
+  color: #c8d0e0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px 28px;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

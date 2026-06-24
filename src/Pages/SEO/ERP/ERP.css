@@ -1,0 +1,266 @@
+/* ── Base ── */
+.erp {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: #1a202c;
+}
+.erp__accent {
+  color: #e8a930;
+}
+
+/* ── Hero ── */
+.erp__hero {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 80px 40px 100px;
+  text-align: center;
+  position: relative;
+}
+.erp__back-btn {
+  position: absolute;
+  top: 28px;
+  left: 36px;
+  background: transparent;
+  border: 1px solid #e8a930;
+  color: #8a9ab5;
+  font-size: 0.83rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.erp__back-btn:hover {
+  border-color: #e8a930;
+  color: #e8a930;
+}
+
+.erp__badge {
+  display: inline-block;
+  background-color: #fff1ec;
+  color: #993c1d;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1px solid #f0997b;
+  margin-bottom: 20px;
+}
+.erp__badge--light {
+  background-color: rgba(216, 90, 48, 0.15);
+  color: #f0997b;
+  border-color: rgba(216, 90, 48, 0.3);
+}
+
+.erp__hero-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  max-width: 720px;
+  margin: 0 auto 20px;
+  letter-spacing: -1px;
+  color: #e8a930;
+}
+.erp__hero-sub {
+  font-size: 1.05rem;
+  color: #8a9ab5;
+  max-width: 580px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+.erp__hero-btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── Buttons ── */
+.erp__btn-primary {
+  background-color: #D85A30;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.erp__btn-primary:hover {
+  background-color: #c24d26;
+  transform: translateY(-2px);
+}
+
+.erp__btn-secondary {
+  background: transparent;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 12px 28px;
+  border: 1px solid #1e3048;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.erp__btn-secondary:hover {
+  border-color: #D85A30;
+  color: #D85A30;
+}
+
+/* ── Sections ── */
+.erp__section {
+  padding: 80px 40px;
+  background-color: #f5f6f8;
+}
+.erp__section--dark {
+  background-color: #0d1b2a;
+}
+
+.erp__section-header {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 52px;
+}
+.erp__section-heading {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #0d1b2a;
+  margin: 0 0 14px;
+  letter-spacing: -0.5px;
+}
+.erp__section-heading--light {
+  color: #fff;
+}
+.erp__section-sub {
+  font-size: 0.97rem;
+  color: #6b7a8d;
+  line-height: 1.7;
+  margin: 0;
+}
+.erp__section-sub--light {
+  color: #8a9ab5;
+}
+
+/* ── Benefits Grid ── */
+.erp__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.erp__card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px 24px;
+  border: 1px solid #e4e8ee;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.erp__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(13, 27, 42, 0.09);
+}
+.erp__card-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 14px;
+}
+.erp__card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin: 0 0 8px;
+}
+.erp__card-desc {
+  font-size: 0.87rem;
+  color: #6b7a8d;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── Steps ── */
+.erp__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.erp__step {
+  padding: 28px 20px;
+  border: 1px solid #1e3048;
+  border-radius: 14px;
+  transition: border-color 0.2s;
+}
+.erp__step:hover {
+  border-color: #D85A30;
+}
+.erp__step-number {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #D85A30;
+  display: block;
+  margin-bottom: 12px;
+}
+.erp__step-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 8px;
+}
+.erp__step-desc {
+  font-size: 0.87rem;
+  color: #8a9ab5;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── CTA ── */
+.erp__cta {
+  background: #162030;
+  text-align: center;
+  padding: 80px 40px;
+  color: #fff;
+}
+.erp__cta-heading {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0 0 16px;
+  letter-spacing: -0.5px;
+  color: #e8a930;
+}
+.erp__cta-sub {
+  font-size: 1rem;
+  color: #8a9ab5;
+  margin: 0 0 32px;
+  line-height: 1.7;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .erp__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .erp__steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .erp__hero {
+    padding: 80px 20px 60px;
+  }
+  .erp__hero-heading {
+    font-size: 2rem;
+  }
+  .erp__section {
+    padding: 52px 20px;
+  }
+  .erp__grid,
+  .erp__steps {
+    grid-template-columns: 1fr;
+  }
+  .erp__cta-heading {
+    font-size: 1.6rem;
+  }
+}

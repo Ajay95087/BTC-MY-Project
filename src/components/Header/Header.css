@@ -1,0 +1,146 @@
+.btc-header {
+  width: 100%;
+  background: #0d1120;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.btc-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
+  position: relative;
+}
+
+/* ── LOGO ── */
+.btc-logo {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  text-decoration: none;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.btc-logo-main {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f0c060;
+  letter-spacing: 0.08em;
+}
+
+.btc-logo-sub {
+  font-family: 'Caveat', cursive;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.04em;
+}
+
+/* ── GOLD ACCENT BAR ── */
+.btc-accent-bar {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #f0c060 0%,
+    rgba(240, 192, 96, 0.2) 60%,
+    transparent 100%
+  );
+}
+
+/* ── HAMBURGER — mobile only ── */
+.btc-hamburger {
+  display: none;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.18s;
+  flex-shrink: 0;
+}
+
+.btc-hamburger:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── MOBILE MENU ── */
+.btc-mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #111827;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.08);
+  padding: 0.75rem 1.5rem 1rem;
+}
+
+.btc-mobile-menu.open {
+  display: flex;
+}
+
+.btc-mobile-menu a {
+  font-family: 'Inter', sans-serif;
+  display: block;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  padding: 0.55rem 0;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.06);
+  transition: color 0.15s;
+}
+
+.btc-mobile-menu a:hover {
+  color: #f0c060;
+}
+
+.btc-mobile-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #5a6580;
+  margin: 0.75rem 0 0.3rem;
+  font-weight: 600;
+}
+
+.btc-mobile-section {
+  padding-left: 0.75rem;
+}
+
+.btc-mobile-section a {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btc-mobile-support {
+  font-family: 'Inter', sans-serif;
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #0d1120;
+  background: #f0c060;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.18s;
+}
+
+.btc-mobile-support:hover {
+  background: #e8b540;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 868px) {
+  .btc-hamburger {
+    display: flex;
+  }
+}
